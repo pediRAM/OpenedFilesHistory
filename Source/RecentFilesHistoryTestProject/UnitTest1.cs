@@ -49,16 +49,16 @@ namespace RecentFilesHistoryTestProject
         [Test(Description = "Adding File01 to File10.txt: File10.txt must be first, File08.txt must be last, count must be == 3.")]
         public void Test_005_Add_10_Files()
         {
-            mgr.Add("File01.txt");
-            mgr.Add("File02.txt");
-            mgr.Add("File03.txt");
-            mgr.Add("File04.txt");
-            mgr.Add("File05.txt");
-            mgr.Add("File06.txt");
-            mgr.Add("File07.txt");
-            mgr.Add("File08.txt");
-            mgr.Add("File09.txt");
-            mgr.Add("File10.txt");
+            mgr.PutAtFront("File01.txt");
+            mgr.PutAtFront("File02.txt");
+            mgr.PutAtFront("File03.txt");
+            mgr.PutAtFront("File04.txt");
+            mgr.PutAtFront("File05.txt");
+            mgr.PutAtFront("File06.txt");
+            mgr.PutAtFront("File07.txt");
+            mgr.PutAtFront("File08.txt");
+            mgr.PutAtFront("File09.txt");
+            mgr.PutAtFront("File10.txt");
 
             Assert.That(mgr.Items.Count, Is.EqualTo(3));
             Assert.That(mgr.Items[0], Is.EqualTo("File10.txt"));
@@ -93,7 +93,7 @@ namespace RecentFilesHistoryTestProject
         [Test(Description = "Adding last one: File08.txt must move it to First position and File09.txt must then be at the Last position")]
         public void Test_009_AddLastOneAgain()
         {
-            mgr.Add("File08.txt");
+            mgr.PutAtFront("File08.txt");
             Assert.That(mgr.Items[0], Is.EqualTo("File08.txt"));
             Assert.That(mgr.Items[mgr.Items.Count - 1], Is.EqualTo("File09.txt"));
         }

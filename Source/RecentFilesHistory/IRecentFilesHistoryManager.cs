@@ -1,6 +1,5 @@
 ﻿namespace RecentFilesHistory
 {
-    using System.Collections.Generic;
     using System.Collections.ObjectModel;
 
 
@@ -23,17 +22,11 @@
 
 
         /// <summary>
-        /// Adds given item to the observable collection at first position if not found in collection, else item will be moved to first position of observable collection.
+        /// Inserts given parameter as first item to the observable collection if not found in collection, 
+        /// else existing item will be moved to the first position in observable collection.
         /// </summary>
         /// <param name="pItem"></param>
-        void Add(T pItem);
-
-
-        /// <summary>
-        /// Adds given items to the observable collection in the same manner like <see cref="Add(T)"/>. If number of items in observable collection has been exceeded, last item(s) will be removed.
-        /// </summary>
-        /// <param name="pItems"></param>
-        void AddRange(IEnumerable<T> pItems);
+        void PutAtFront(T pItem);
 
 
         /// <summary>

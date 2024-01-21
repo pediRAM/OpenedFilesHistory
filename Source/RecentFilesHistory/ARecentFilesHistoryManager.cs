@@ -11,7 +11,8 @@
 
 
     /// <summary>
-    /// Implements <see cref="IRecentFilesHistoryManager{T}"/> and defines abstract methods <see cref="Load"/> and <see cref="Save"/> for loading and saving items persistently.
+    /// Implements <see cref="IRecentFilesHistoryManager{T}"/> and defines abstract 
+    /// methods <see cref="Load"/> and <see cref="Save"/> for loading and saving items persistently.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public abstract class ARecentFilesHistoryManager<T> : IRecentFilesHistoryManager<T> where T : IComparable<T>, IEquatable<T>
@@ -50,11 +51,13 @@
         #region Methods
 
         /// <summary>
-        /// Adds an item with LRU (Least Recently Used) policy: adds given item to the observable collection at first position if not found in collection, else item will be moved to first position of observable collection.
+        /// Inserts an item with LRU (Least Recently Used) policy: inserts given argument as first 
+        /// item to the observable collection if not found in collection, else updates item position 
+        /// by moving it to the first position of observable collection.
         /// <para>Notice: Null arguments will be ignored!</para>
         /// </summary>
         /// <param name="pItem"></param>
-        public virtual void Add(T pItem)
+        public virtual void PutAtFront(T pItem)
         {
             if (null == pItem)
                 return;
@@ -81,13 +84,21 @@
 
 
         /// <summary>
-        /// Adds given items to the observable collection with the same LRU policy like <see cref="Add(T)"/>. If number of items in observable collection has been exceeded, last item(s) will be removed.
+        /// Adds given items to the observable collection in the same order as they are and 
+        /// extra items which exceed the Capacity are ignored.
+        /// <para>This method is used internally or by implementors when loading items from file or other sources.</para>
+        /// <para>IMPORTANT: DO NOT CALL THIS METHOD FOR USUAL ACTIVITIES LIKE SAVING PATHS!</para>
         /// </summary>
         /// <param name="pItems"></param>
-        public virtual void AddRange(IEnumerable<T> pItems)
+        protected virtual void AddRange(IEnumerable<T> pItems)
         {
             foreach (var pItem in pItems)
-                Add(pItem);
+            {
+                if (Items.Count == Capacity)
+                    return;
+
+                Items.Add(pItem);
+            }
         }
 
 

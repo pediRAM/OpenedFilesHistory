@@ -44,7 +44,7 @@
         private void OnOpenFileClicked(object sender, RoutedEventArgs e)
         {
             if (_openFileDialog.ShowDialog() == true)
-                _recentFileHistoryManager.Add(_openFileDialog.FileName);
+                _recentFileHistoryManager.PutAtFront(_openFileDialog.FileName);
         }
 
         private void OnClearFilesHistoryClicked(object sender, RoutedEventArgs e) => _recentFileHistoryManager?.Clear();
