@@ -1,24 +1,56 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-namespace OpenedFilesHistoryDemoWpfApp
+﻿namespace RecentFilesHistoryDemoWpfApp
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    using Microsoft.Win32;
+    using RecentFilesHistory;
+    using System.IO;
+    using System.Windows;
+    using System.Windows.Controls;
+
+
     public partial class MainWindow : Window
     {
+        private RecentFilesHistoryManager _recentFileHistoryManager;
+        private OpenFileDialog _openFileDialog = new OpenFileDialog();
+
+
         public MainWindow()
         {
             InitializeComponent();
+
+            // Save paths before closing app.
+            Closing += OnMainWindow_Closing;
+
+            // Path to the json file to save paths persistently.
+            string path = "Files History.json";
+
+            // Create the file history manager.
+            _recentFileHistoryManager = new RecentFilesHistoryManager(path);
+
+            // Load saved paths if json file exists.
+            if (File.Exists(path))
+                _recentFileHistoryManager.Load();
+
+            DataContext = _recentFileHistoryManager.Paths;
         }
+
+
+        private void OnMainWindow_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+            => _recentFileHistoryManager.Save(); // Save paths persistently into json file.
+
+
+        public void OnProjectHistoryClicked(object sender, RoutedEventArgs e)
+            => _ = MessageBox.Show(((MenuItem)sender).Tag as string);
+
+        private void OnOpenFileClicked(object sender, RoutedEventArgs e)
+        {
+            if (_openFileDialog.ShowDialog() == true)
+                _recentFileHistoryManager.Add(_openFileDialog.FileName);
+        }
+
+        private void OnClearFilesHistoryClicked(object sender, RoutedEventArgs e) => _recentFileHistoryManager?.Clear();
+
+        private void OnLoadFilesHistoryClicked(object sender, RoutedEventArgs e) => _recentFileHistoryManager?.Load();
+
+        private void OnSaveFilesHistoryClicked(object sender, RoutedEventArgs e) => _recentFileHistoryManager?.Save();
     }
 }

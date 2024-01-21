@@ -10,15 +10,8 @@
     #endregion Usings
 
 
-    public abstract class AbstractPathHistoryManager : IPathHistoryManager, INotifyPropertyChanged
+    public abstract class APathHistoryManager : IPathHistoryManager
     {
-        #region Events
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        #endregion Events
-
-
         #region Variables
 
         private int _Capacity = 10;
@@ -31,7 +24,7 @@
         /// <summary>
         /// Gets/Sets the maximum of saved paths.
         /// </summary>
-        public int Capacity
+        public virtual int Capacity
         {
             get => _Capacity;
             set
@@ -40,7 +33,6 @@
                     throw new ArgumentOutOfRangeException(nameof(Capacity));
 
                 _Capacity = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Capacity)));
             }
         }
 
