@@ -51,7 +51,8 @@
         public override void Load()
         {
             Clear();
-            AddRange(JsonSerializer.Deserialize<string[]>(File.ReadAllText(_Path, Encoding.UTF8)));
+            foreach(string path in JsonSerializer.Deserialize<string[]>(File.ReadAllText(_Path, Encoding.UTF8)))
+                Items.Add(path);
         }
 
 

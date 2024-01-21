@@ -39,6 +39,7 @@
             }
         }
 
+
         /// <summary>
         /// Contains the cached items.
         /// </summary>
@@ -77,6 +78,7 @@
             if (Items.Count > Capacity)
                 Items.RemoveAt(Items.Count - 1);
         }
+
 
         /// <summary>
         /// Adds given items to the observable collection with the same LRU policy like <see cref="Add(T)"/>. If number of items in observable collection has been exceeded, last item(s) will be removed.

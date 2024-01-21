@@ -61,8 +61,8 @@ namespace RecentFilesHistoryTestProject
             mgr.Add("File10.txt");
 
             Assert.That(mgr.Items.Count, Is.EqualTo(3));
-            Assert.That(mgr.Items.First, Is.EqualTo("File10.txt"));
-            Assert.That(mgr.Items.Last, Is.EqualTo("File08.txt"));
+            Assert.That(mgr.Items[0], Is.EqualTo("File10.txt"));
+            Assert.That(mgr.Items[mgr.Items.Count - 1], Is.EqualTo("File08.txt"));
         }
 
 
@@ -86,16 +86,16 @@ namespace RecentFilesHistoryTestProject
         {
             Assert.DoesNotThrow(() => mgr.Load());
             Assert.That(mgr.Items.Count, Is.EqualTo(3));
-            Assert.That(mgr.Items.First, Is.EqualTo("File10.txt"));
-            Assert.That(mgr.Items.Last, Is.EqualTo("File08.txt"));
+            Assert.That(mgr.Items[0], Is.EqualTo("File10.txt"));
+            Assert.That(mgr.Items[mgr.Items.Count - 1], Is.EqualTo("File08.txt"));
         }
 
         [Test(Description = "Adding last one: File08.txt must move it to First position and File09.txt must then be at the Last position")]
         public void Test_009_AddLastOneAgain()
         {
             mgr.Add("File08.txt");
-            Assert.That(mgr.Items.First, Is.EqualTo("File08.txt"));
-            Assert.That(mgr.Items.Last, Is.EqualTo("File09.txt"));
+            Assert.That(mgr.Items[0], Is.EqualTo("File08.txt"));
+            Assert.That(mgr.Items[mgr.Items.Count - 1], Is.EqualTo("File09.txt"));
         }
     }
 }
