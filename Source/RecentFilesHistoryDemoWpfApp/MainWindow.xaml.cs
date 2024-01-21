@@ -30,7 +30,7 @@
             if (File.Exists(path))
                 _recentFileHistoryManager.Load();
 
-            DataContext = _recentFileHistoryManager.Paths;
+            DataContext = _recentFileHistoryManager.Items;
         }
 
 
