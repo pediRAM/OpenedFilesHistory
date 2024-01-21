@@ -37,6 +37,10 @@
                     throw new ArgumentOutOfRangeException(nameof(Capacity));
 
                 _Capacity = value;
+
+                // Remove items when downsized!
+                while (_Capacity < Items.Count)
+                    Items.RemoveAt(Items.Count - 1);
             }
         }
 
