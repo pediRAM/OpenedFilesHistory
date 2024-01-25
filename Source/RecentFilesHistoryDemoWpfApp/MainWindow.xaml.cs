@@ -39,7 +39,12 @@
 
 
         public void OnProjectHistoryClicked(object sender, RoutedEventArgs e)
-            => _ = MessageBox.Show(((MenuItem)sender).Tag as string);
+        {
+            string? path = ((MenuItem)sender).Tag as string;
+            _ = MessageBox.Show(path);
+
+            _recentFileHistoryManager?.PutAtFront(path);
+        }
 
         private void OnOpenFileClicked(object sender, RoutedEventArgs e)
         {

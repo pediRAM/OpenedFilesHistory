@@ -1,0 +1,98 @@
+<Project>
+  <Name>RecentFilesHistory</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.ClassDiagram" assembly="NClass.DiagramEditor, Version=2.8.0.2, Culture=neutral, PublicKeyToken=null">
+    <Name>RecentFilesHistory</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Interface">
+        <Name>IRecentFilesHistoryManager&lt;T&gt;</Name>
+        <Access>Public</Access>
+        <Location left="161" top="159" />
+        <Size width="271" height="163" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">int Capacity { get; set; }</Member>
+        <Member type="Property">int Count { get; }</Member>
+        <Member type="Property">ObservableCollection&lt;T&gt; Items { get; set; }</Member>
+        <Member type="Method">bool PutAtFront(T pItem)</Member>
+        <Member type="Method">bool Remove(T pItem)</Member>
+        <Member type="Method">void Clear()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>ARecentFilesHistoryManager&lt;T&gt;</Name>
+        <Access>Public</Access>
+        <Location left="161" top="416" />
+        <Size width="271" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Event">public event PropertyChangedEventHandler PropertyChanged</Member>
+        <Member type="Constructor">protected ARecentFilesHistoryManager()</Member>
+        <Member type="Property">public int Capacity { get; set; }</Member>
+        <Member type="Property">public int Count { get; }</Member>
+        <Member type="Property">public ObservableCollection&lt;T&gt; Items { get; set; }</Member>
+        <Member type="Method">public void Clear()</Member>
+        <Member type="Method">public bool PutAtFront(T pItem)</Member>
+        <Member type="Method">public bool Remove(T pItem)</Member>
+        <Member type="Method">public abstract void Load()</Member>
+        <Member type="Method">public abstract void Save()</Member>
+        <Member type="Method">protected void AddRange(IEnumerable&lt;T&gt; pItems)</Member>
+        <Member type="Method">protected void TrimItems()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RecentFilesHistoryManager</Name>
+        <Access>Public</Access>
+        <Location left="161" top="791" />
+        <Size width="271" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public RecentFilesHistoryManager(string pPath)</Member>
+        <Member type="Method">public void Load()</Member>
+        <Member type="Method">public void Save()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Implements abstract methods: 
+- Load()
+- Save()
+</Text>
+        <Location left="520" top="759" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Provides abstract methods: 
+- Load()
+- Save()
+</Text>
+        <Location left="528" top="553" />
+        <Size width="160" height="75" />
+      </Entity>
+    </Entities>
+    <Containers />
+    <Relationships>
+      <Relationship type="Realization" first="1" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>293</X>
+          <Y>388</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>293</X>
+          <Y>349</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Comment" first="3" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Comment" first="4" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
