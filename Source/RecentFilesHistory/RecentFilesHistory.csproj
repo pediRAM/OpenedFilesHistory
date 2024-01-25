@@ -2,15 +2,55 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8</LangVersion>
+
     <ApplicationIcon>RecentFileHistory.ico</ApplicationIcon>
+
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.0</Version>
+    <VersionSuffix></VersionSuffix>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageIcon>icon.png</PackageIcon>
+    <Title>Facilitates accessing recently opened saved closed files as file history or recent files or recent sesstions</Title>
+    <Authors>Pedram GANJEH-HADIDI</Authors>
+    <Owners>Pedram GANJEH-HADIDI)</Owners>
+    <ProjectUrl>https://github.com/pediRAM/RecentFilesHistory</ProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>
+      The library Facilitating Easy and Efficient File Access in Desktop Applications, 
+      Mirroring Popular Feature like "File History" or "Last Opened Files" or 
+      "Recent Files" from Notable Editors and Design Applications
+    </Description>
+    <PackageReleaseNotes>This is the very first release.</PackageReleaseNotes>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/pediRAM/RecentFilesHistory</PackageProjectUrl>
+    <Copyright>Copyright (C)2024 by Pedram GANJEH-HADIDI</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/pediRAM/RecentFilesHistory.git</RepositoryUrl>
+    <PackageTags>recent files history recently opened closed saved files sessions</PackageTags>
+    
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="RecentFileHistory.ico" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="System.Text.Json" Version="8.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
