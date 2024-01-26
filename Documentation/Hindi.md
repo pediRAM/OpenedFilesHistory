@@ -2,10 +2,10 @@
 इस पुस्तकालय ने डेस्कटॉप ऐप्लिकेशन्स में आसान और दक्ष फ़ाइल एक्सेस को सुविधाजनक बनाया है, जो लोकप्रिय संपादकों और डिज़ाइन एप्लिकेशन्स से "फ़ाइल इतिहास", "आख़री खोली गई फ़ाइलें" या "हाल की फ़ाइलें" जैसे पॉपुलर फ़ीचर का परिचाय करता है।
 
 ## उपयोग का उदाहरण
-![हाल की फ़ाइल इतिहास](demo-window-history-of-recently-opened-closed-or-saved-files.png)
+![हाल की फ़ाइल इतिहास](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/demo-window-history-of-recently-opened-closed-or-saved-files.png)
 
 ## UML कक्ष आरेख
-![UML कक्ष आरेख](uml-class-diagramm-of-recent-files-history.png)
+![UML कक्ष आरेख](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/uml-class-diagramm-of-recent-files-history.png)
 
 ## कैसे काम करता है
 यह पुस्तकालय जेनेरिक अब्स्ट्रैक्ट क्लास `RecentlyFilesHistoryManager<T>` को शामिल करता है, जो LRU (कम हाल में उपयोग किया गया) कैश पॉलिसी का उपयोग करके `ObservableCollection<T> Items` में तत्वों का प्रबंधन करता है।

@@ -2,10 +2,10 @@
 这个库为桌面应用程序提供了便捷高效的文件访问功能，模仿了知名编辑器和设计应用程序中的流行功能，如“文件历史记录”、“最近打开的文件”和“最近文件”。
 
 ## 使用示例
-![最近文件历史记录](demo-window-history-of-recently-opened-closed-or-saved-files.png)
+![最近文件历史记录](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/demo-window-history-of-recently-opened-closed-or-saved-files.png)
 
 ## UML类图
-![UML类图](uml-class-diagramm-of-recent-files-history.png)
+![UML类图](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/uml-class-diagramm-of-recent-files-history.png)
 
 ## 工作原理
 该库包括泛型抽象类 `RecentlyFilesHistoryManager<T>`，使用LRU（最近最少使用）缓存策略来管理 `ObservableCollection<T> Items` 中的元素。

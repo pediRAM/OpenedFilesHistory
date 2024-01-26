@@ -2,10 +2,10 @@
 Эта библиотека облегчает доступ к файлам в рабочих приложениях, предоставляя популярные функции, такие как "История файлов", "Последние открытые файлы" и "Последние файлы", известные известными редакторами и приложениями для дизайна.
 
 ## Пример использования
-![История недавно открытых, сохраненных или закрытых файлов](demo-window-history-of-recently-opened-closed-or-saved-files.png)
+![История недавно открытых, сохраненных или закрытых файлов](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/demo-window-history-of-recently-opened-closed-or-saved-files.png)
 
 ## UML-диаграмма классов
-![UML-диаграмма классов](uml-class-diagramm-of-recent-files-history.png)
+![UML-диаграмма классов](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/uml-class-diagramm-of-recent-files-history.png)
 
 ## Как это работает
 Библиотека включает в себя обобщенный абстрактный класс `RecentlyFilesHistoryManager<T>`, который управляет элементами в коллекции `ObservableCollection<T> Items` с использованием стратегии кэширования LRU (Наименее недавно использованные).

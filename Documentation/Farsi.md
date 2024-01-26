@@ -2,10 +2,10 @@
 این کتابخانه دسترسی به فایل‌ها در برنامه‌های دسکتاپ را ساده و کارآمد می‌کند و ویژگی‌های محبوبی مانند "تاریخچه فایل"، "آخرین فایل‌های باز شده" و "فایل‌های اخیر" را از ویرایشگرها و برنامه‌های طراحی معتبر تجسم می‌کند.
 
 ## نمونه استفاده
-![تاریخچه فایل‌های اخیر](demo-window-history-of-recently-opened-closed-or-saved-files.png)
+![تاریخچه فایل‌های اخیر](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/demo-window-history-of-recently-opened-closed-or-saved-files.png)
 
 ## نمودار کلاس UML
-![نمودار کلاس UML](uml-class-diagramm-of-recent-files-history.png)
+![نمودار کلاس UML](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/uml-class-diagramm-of-recent-files-history.png)
 
 ## چگونگی عملکرد
 این کتابخانه شامل کلاس انتزاعی عمومی ژنریک `RecentlyFilesHistoryManager<T>` است که عناصر را در مجموعه `ObservableCollection<T> Items` با استفاده از سیاست حافظه موقت LRU (کمترین استفاده اخیر) مدیریت می‌کند.

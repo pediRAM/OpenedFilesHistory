@@ -2,10 +2,10 @@
 Diese Bibliothek erleichtert den einfachen und effizienten Zugriff auf Dateien in Desktop-Anwendungen und spiegelt die beliebte Funktion "Dateiverlauf" bzw. "Zuletzt geöffnete Dateien" oder auch "Neueste Dateien" genannt wieder, welche aus namhaften Editoren und Designanwendungen bekannt sind.
 
 ## Beispiel zur Verwendung
-![Verlauf von zuletzt geöffneten, geschlossenen oder gespeicherten Dateien](demo-window-history-of-recently-opened-closed-or-saved-files.png)
+![Verlauf von zuletzt geöffneten, geschlossenen oder gespeicherten Dateien](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/demo-window-history-of-recently-opened-closed-or-saved-files.png)
 
 ## UML-Klassendiagramm
-![UML-Klassendiagramm](uml-class-diagramm-of-recent-files-history.png)
+![UML-Klassendiagramm](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/uml-class-diagramm-of-recent-files-history.png)
 
 ## Funktionsweise
 Die Bibliothek enthält die generische abstrakte Klasse `RecentlyFilesHistoryManager<T>`, die Elemente in der `ObservableCollection<T> Items` mithilfe einer LRU (Least Recently Used) Cache-Politik verwaltet.
