@@ -1,3 +1,9 @@
+![logo](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/icon.png)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/release/pediRAM/RecentFilesHistory.svg?sort=semver)](https://github.com/pediRAM/RecentFilesHistory/releases)
+[![NuGet](https://img.shields.io/nuget/v/RecentFilesHistory)](https://www.nuget.org/packages/RecentFilesHistory)
+
 # RecentFilesHistory库
 这个库为桌面应用程序提供了便捷高效的文件访问功能，模仿了知名编辑器和设计应用程序中的流行功能，如“文件历史记录”、“最近打开的文件”和“最近文件”。
 

@@ -1,3 +1,9 @@
+![logo](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/icon.png)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/release/pediRAM/RecentFilesHistory.svg?sort=semver)](https://github.com/pediRAM/RecentFilesHistory/releases)
+[![NuGet](https://img.shields.io/nuget/v/RecentFilesHistory)](https://www.nuget.org/packages/RecentFilesHistory)
+
 # हाल की फ़ाइल इतिहास पुस्तकालय
 इस पुस्तकालय ने डेस्कटॉप ऐप्लिकेशन्स में आसान और दक्ष फ़ाइल एक्सेस को सुविधाजनक बनाया है, जो लोकप्रिय संपादकों और डिज़ाइन एप्लिकेशन्स से "फ़ाइल इतिहास", "आख़री खोली गई फ़ाइलें" या "हाल की फ़ाइलें" जैसे पॉपुलर फ़ीचर का परिचाय करता है।
 

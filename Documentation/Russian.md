@@ -1,3 +1,9 @@
+![logo](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/icon.png)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/release/pediRAM/RecentFilesHistory.svg?sort=semver)](https://github.com/pediRAM/RecentFilesHistory/releases)
+[![NuGet](https://img.shields.io/nuget/v/RecentFilesHistory)](https://www.nuget.org/packages/RecentFilesHistory)
+
 # Библиотека RecentFilesHistory
 Эта библиотека облегчает доступ к файлам в рабочих приложениях, предоставляя популярные функции, такие как "История файлов", "Последние открытые файлы" и "Последние файлы", известные известными редакторами и приложениями для дизайна.
 

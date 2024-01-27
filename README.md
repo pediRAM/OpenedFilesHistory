@@ -1,15 +1,17 @@
+![logo](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/icon.png)
+
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Release](https://img.shields.io/github/release/pediRAM/RecentFilesHistory.svg?sort=semver)](https://github.com/pediRAM/RecentFilesHistory/releases)
 [![NuGet](https://img.shields.io/nuget/v/RecentFilesHistory)](https://www.nuget.org/packages/RecentFilesHistory)
 
 This is the english documentation. Following translations are available:
-- [普通话 (Mandarin) :cn:](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/Mandarin.md)
-- [Español :es:](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/Spanish.md)
-- [Pусский :ru:](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/Russian.md)
-- [Deutsch :de: :austria: :switzerland:](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/German.md)
-- [हिंदी :india:](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/Hindi.md)
-- [Türkçe :tr:](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/Turkish.md)
-- [فارسی :iran: :afghanistan: :tajikistan:](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/Farsi.md)
+- [普通话 (Mandarin) :cn:](https://github.com/pediRAM/RecentFilesHistory/blob/main/Documentation/Mandarin.md)
+- [Español :es:](https://github.com/pediRAM/RecentFilesHistory/blob/main/Documentation/Spanish.md)
+- [Pусский :ru:](https://github.com/pediRAM/RecentFilesHistory/blob/main/Documentation/Russian.md)
+- [Deutsch :de: :austria: :switzerland:](https://github.com/pediRAM/RecentFilesHistory/blob/main/Documentation/German.md)
+- [हिंदी :india:](https://github.com/pediRAM/RecentFilesHistory/blob/main/Documentation/Hindi.md)
+- [Türkçe :tr:](https://github.com/pediRAM/RecentFilesHistory/blob/main/Documentation/Turkish.md)
+- [فارسی :iran: :afghanistan: :tajikistan:](https://github.com/pediRAM/RecentFilesHistory/blob/main/Documentation/Farsi.md)
 
 # RecentFilesHistory Library
 This Library Facilitating Easy and Efficient File Access in Desktop Applications, Mirroring Popular Feature like "**Recent Files**" or "**Last Opened Files**" or "**File History**" from Notable Editors and Design Applications. 

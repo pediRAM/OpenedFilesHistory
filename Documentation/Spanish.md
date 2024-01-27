@@ -1,3 +1,9 @@
+![logo](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/icon.png)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/release/pediRAM/RecentFilesHistory.svg?sort=semver)](https://github.com/pediRAM/RecentFilesHistory/releases)
+[![NuGet](https://img.shields.io/nuget/v/RecentFilesHistory)](https://www.nuget.org/packages/RecentFilesHistory)
+
 # Biblioteca RecentFilesHistory
 Esta biblioteca facilita el acceso fácil y eficiente a archivos en aplicaciones de escritorio, reflejando características populares como "Historial de archivos", "Últimos archivos abiertos" y "Archivos recientes" de editores y aplicaciones de diseño destacados.
 

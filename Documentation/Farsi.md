@@ -1,3 +1,9 @@
+![logo](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/icon.png)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/release/pediRAM/RecentFilesHistory.svg?sort=semver)](https://github.com/pediRAM/RecentFilesHistory/releases)
+[![NuGet](https://img.shields.io/nuget/v/RecentFilesHistory)](https://www.nuget.org/packages/RecentFilesHistory)
+
 # کتابخانه RecentFilesHistory
 این کتابخانه دسترسی به فایل‌ها در برنامه‌های دسکتاپ را ساده و کارآمد می‌کند و ویژگی‌های محبوبی مانند "تاریخچه فایل"، "آخرین فایل‌های باز شده" و "فایل‌های اخیر" را از ویرایشگرها و برنامه‌های طراحی معتبر تجسم می‌کند.
 

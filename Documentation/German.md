@@ -1,3 +1,9 @@
+![logo](https://raw.githubusercontent.com/pediRAM/RecentFilesHistory/main/Documentation/icon.png)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/release/pediRAM/RecentFilesHistory.svg?sort=semver)](https://github.com/pediRAM/RecentFilesHistory/releases)
+[![NuGet](https://img.shields.io/nuget/v/RecentFilesHistory)](https://www.nuget.org/packages/RecentFilesHistory)
+
 # RecentFilesHistory-Bibliothek
 Diese Bibliothek erleichtert den einfachen und effizienten Zugriff auf Dateien in Desktop-Anwendungen und spiegelt die beliebte Funktion "Dateiverlauf" bzw. "Zuletzt geöffnete Dateien" oder auch "Neueste Dateien" genannt wieder, welche aus namhaften Editoren und Designanwendungen bekannt sind.
 
