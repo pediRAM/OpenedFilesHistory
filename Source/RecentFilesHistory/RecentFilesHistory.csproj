@@ -8,9 +8,9 @@
 
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <VersionSuffix></VersionSuffix>
-    <PackageVersion>1.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageIcon>icon.png</PackageIcon>
     <Title>Facilitates accessing recently opened saved closed files as file history or recent files or recent sesstions</Title>
     <Authors>Pedram GANJEH-HADIDI</Authors>
@@ -22,9 +22,9 @@
       Mirroring Popular Feature like "File History" or "Last Opened Files" or 
       "Recent Files" from Notable Editors and Design Applications
     </Description>
-    <PackageReleaseNotes>This is the very first release.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
+    <PackageReleaseNotes>Fixed Denial of Service Vulnerability CVE-2024-30105</PackageReleaseNotes>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/pediRAM/RecentFilesHistory</PackageProjectUrl>
     <Copyright>Copyright (C)2024 by Pedram GANJEH-HADIDI</Copyright>
@@ -39,7 +39,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="8.0.1" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
   
   <ItemGroup>
