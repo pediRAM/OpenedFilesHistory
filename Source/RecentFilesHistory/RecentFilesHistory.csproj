@@ -6,11 +6,16 @@
 
     <ApplicationIcon>RecentFileHistory.ico</ApplicationIcon>
 
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <PackageOutputPath>bin\Release\</PackageOutputPath>
+
+
+
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>1.0.2</Version>
     <VersionSuffix></VersionSuffix>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <PackageIcon>icon.png</PackageIcon>
     <Title>Facilitates accessing recently opened saved closed files as file history or recent files or recent sesstions</Title>
     <Authors>Pedram GANJEH-HADIDI</Authors>
