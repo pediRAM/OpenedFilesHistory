@@ -8,7 +8,7 @@
 
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <VersionSuffix></VersionSuffix>
     <PackageVersion>1.0.1</PackageVersion>
     <PackageIcon>icon.png</PackageIcon>
@@ -22,9 +22,9 @@
       Mirroring Popular Feature like "File History" or "Last Opened Files" or 
       "Recent Files" from Notable Editors and Design Applications
     </Description>
-    <PackageReleaseNotes>Fixed Denial of Service Vulnerability CVE-2024-30105</PackageReleaseNotes>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <FileVersion>1.0.1</FileVersion>
+    <PackageReleaseNotes>Fixed Denial of Service Vulnerability CVE-2024-43485</PackageReleaseNotes>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/pediRAM/RecentFilesHistory</PackageProjectUrl>
     <Copyright>Copyright (C)2024 by Pedram GANJEH-HADIDI</Copyright>
